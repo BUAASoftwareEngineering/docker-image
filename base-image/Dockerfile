@@ -7,7 +7,7 @@ RUN     apt-get update --allow-unauthenticated
 
 # install enviroment for terminal
 RUN     apt-get install -y --allow-unauthenticated make python build-essential
-RUN     apt-get install docker.io
+RUN     apt-get install docker.io --assume-yes --allow-unauthenticated
 
 COPY    container-server /home/container-server
 COPY    terminal         /home/terminal
