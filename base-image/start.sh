@@ -1,6 +1,3 @@
-cd  /home/terminal
-npm install
-npm run start
-
+# start container-server
 pm2 start /home/container-server/index.js
 pm2 logs
